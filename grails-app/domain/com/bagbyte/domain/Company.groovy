@@ -22,6 +22,10 @@ class Company {
                        invoicesReceived: "client"]
 
     static constraints = {
-        address unique: true
+        name nullable: false
+        vatCode nullable: true
+        description nullable: true
+        note nullable: true
+        address unique: true, nullable: true
     }
 }

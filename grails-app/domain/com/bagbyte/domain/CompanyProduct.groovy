@@ -12,4 +12,11 @@ class CompanyProduct {
 
     Date date
     Double price
+
+    static constraints = {
+        product nullable: false
+        company nullable: false
+        date nullable: true
+        price nullable: false
+    }
 }

@@ -14,4 +14,10 @@ class Invoice {
     Double amount
 
     static hasMany = [details: InvoiceItem]
+
+    static constraints = {
+        issuer nullable: false
+        client nullable: false
+        date nullable: false
+    }
 }

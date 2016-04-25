@@ -19,4 +19,17 @@ class Address {
     Double longitude
 
     Company company
+
+    static constraints = {
+        header nullable: true
+        street nullable: false
+        houseNumber nullable: true
+        postalCode nullable: true
+        city nullable: false
+        country nullable: false
+        note nullable: true
+        latitude nullable: true
+        longitude nullable: true
+        company nullable: false
+    }
 }
