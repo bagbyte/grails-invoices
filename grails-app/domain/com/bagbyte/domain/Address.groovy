@@ -1,8 +1,11 @@
 package com.bagbyte.domain
 
+import grails.rest.Resource
+
 /**
  * Created by sabino on 24/04/16.
  */
+@Resource(uri='/addresses', formats=['json', 'xml'])
 class Address {
     String header
     String street
@@ -14,4 +17,6 @@ class Address {
 
     Double latitude
     Double longitude
+
+    Company company
 }
