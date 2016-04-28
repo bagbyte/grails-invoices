@@ -12,7 +12,7 @@ class InvoiceItem {
 
     Integer quantity
 
-    DiscountType discountType = DiscountType.PERCENTAGE
+    DiscountType discountType = DiscountType.VALUE
 
     Double discount
 

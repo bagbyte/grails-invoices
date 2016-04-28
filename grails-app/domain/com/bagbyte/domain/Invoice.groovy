@@ -13,6 +13,10 @@ class Invoice {
     Date date
     Double amount
 
+    String code
+    String description
+    String note
+
     static hasMany = [details: InvoiceItem]
 
     static constraints = {
