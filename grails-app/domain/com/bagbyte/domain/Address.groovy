@@ -22,7 +22,7 @@ class Address {
 
     static constraints = {
         header nullable: true
-        street nullable: false
+        street nullable: true
         houseNumber nullable: true
         postalCode nullable: true
         city nullable: false

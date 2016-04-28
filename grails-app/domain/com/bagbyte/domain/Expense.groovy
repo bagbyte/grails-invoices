@@ -7,13 +7,17 @@ import grails.rest.Resource
  */
 @Resource(uri='/expenses', formats=['json', 'xml'])
 class Expense {
-    Company vendor
-    Company client
+    DailyIncome dailyIncome
 
-    Date date
     Double amount
-    Currency currency
 
     String note
     String description
+
+    static constraints = {
+        dailyIncome nullable: false
+        amount nullable: false
+        note nullable: true
+        description nullable: true
+    }
 }
