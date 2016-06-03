@@ -5,7 +5,7 @@ import grails.rest.Resource
 /**
  * Created by sabino on 24/04/16.
  */
-@Resource(uri='/invoices/items', formats=['json', 'xml'])
+@Resource(uri='/api/invoices/items', formats=['json', 'xml'])
 class InvoiceItem {
     Invoice invoice
     CompanyProduct product

@@ -5,7 +5,7 @@ import grails.rest.Resource
 /**
  * Created by sabino on 24/04/16.
  */
-@Resource(uri='/companies', formats=['json', 'xml'])
+@Resource(uri='/api/companies', formats=['json', 'xml'])
 class Company {
     String name
     String vatCode

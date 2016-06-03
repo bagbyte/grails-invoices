@@ -5,7 +5,7 @@ import grails.rest.Resource
 /**
  * Created by sabino on 24/04/16.
  */
-@Resource(uri='/addresses', formats=['json', 'xml'])
+@Resource(uri='/api/addresses', formats=['json', 'xml'])
 class Address {
     String header
     String street

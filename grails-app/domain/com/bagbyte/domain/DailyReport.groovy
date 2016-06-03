@@ -5,8 +5,8 @@ import grails.rest.Resource
 /**
  * Created by spapagna on 28/04/2016.
  */
-@Resource(uri='/dailyIncomes', formats=['json', 'xml'])
-class DailyIncome {
+@Resource(uri='/api/dailyReports', formats=['json', 'xml'])
+class DailyReport {
     Date date
 
     Double total
@@ -27,12 +27,9 @@ class DailyIncome {
     }
 
     def beforeInsert() {
-        cash = total
+        extra = total - cash
 
         if (expenses != null)
-            expenses.each{ cash -= it.amount }
-
-        if (extra != null)
-            cash += extra
+            expenses.each{ extra -= it.amount }
     }
 }
