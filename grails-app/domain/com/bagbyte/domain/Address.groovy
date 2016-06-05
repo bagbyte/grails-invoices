@@ -1,11 +1,12 @@
 package com.bagbyte.domain
 
+import com.bagbyte.rest.PaginationRestfulController
 import grails.rest.Resource
 
 /**
  * Created by sabino on 24/04/16.
  */
-@Resource(uri='/api/addresses', formats=['json', 'xml'])
+@Resource(uri='/api/addresses', formats=['json', 'xml'], superClass = PaginationRestfulController)
 class Address {
     String header
     String street

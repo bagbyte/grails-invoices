@@ -1,11 +1,12 @@
 package com.bagbyte.domain
 
+import com.bagbyte.rest.PaginationRestfulController
 import grails.rest.Resource
 
 /**
  * Created by sabino on 24/04/16.
  */
-@Resource(uri='/api/company/products', formats=['json', 'xml'])
+@Resource(uri='/api/company/products', formats=['json', 'xml'], superClass = PaginationRestfulController)
 class CompanyProduct {
     Company company
     Product product

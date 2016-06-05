@@ -1,11 +1,12 @@
 package com.bagbyte.domain
 
+import com.bagbyte.rest.PaginationRestfulController
 import grails.rest.Resource
 
 /**
  * Created by spapagna on 28/04/2016.
  */
-@Resource(uri='/api/expenses', formats=['json', 'xml'])
+@Resource(uri='/api/expenses', formats=['json', 'xml'], superClass = PaginationRestfulController)
 class Expense {
     DailyReport dailyIncome
 

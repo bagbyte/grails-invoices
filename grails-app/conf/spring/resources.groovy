@@ -1,3 +1,5 @@
-// Place your Spring DSL code here
+import com.bagbyte.domain.filters.CorsFilter
+
 beans = {
+    corsFilter(CorsFilter)
 }
